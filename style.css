@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #eeeeee;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.25rem;
+  padding: 4rem 1rem;
+}
+
+header,
+form {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+form input,
+form button {
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: none;
+}
+form input {
+  max-width: 500px;
+  width: 100%;
+}
+form button {
+  background-color: coral;
+  color: #eeeeee;
+  transition: all 1 ease-in-out;
+}
+form button:hover {
+  cursor: pointer;
+  background-color: chocolate;
+}
+
+.todo-container {
+  margin-top: 4rem;
+}
+.todo-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.todo-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  border-bottom: 1px solid gray;
+}
+.todo-item {
+  flex: 1;
+  padding-bottom: 1rem;
+}
+
+.todo-list button {
+  max-height: 22px;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  opacity: 0.3;
+}
+.completed span {
+  text-decoration: line-through;
+}
